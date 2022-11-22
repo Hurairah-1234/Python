@@ -195,7 +195,7 @@ df3['ml_experience'] = df['For how many years have you used machine learning met
 df3['salary'] = df['What is your current yearly compensation (approximate $USD)?']
 df3['Gender_Count']=df3['What is your gender? - Selected Choice']
 df3['platform'] = df1['platforms']
-fig = px.sunburst(data_frame=df3,path=[df3['Gender'], df3['age'],df3['country'],df3['ml_experience'],df3['salary'],df3['platform'],df3['first_platform']],values=df3['Gender_Count'],color_discrete_sequence=["deepskyblue", "mediumturquoise","aquamarine", "greenyellow","limegreen"],width=3000, height=1500,
+fig = px.sunburst(data_frame=df3,path=[df3['Gender'], df3['age'],df3['country'],df3['ml_experience'],df3['salary'],df3['platform'],df3['first_platform']],values=df3['Gender_Count'],color_discrete_sequence=["deepskyblue", "mediumturquoise","aquamarine", "greenyellow","limegreen"],width=5000, height=3000,
                 title='<b>Summary')
 fig.update_layout( plot_bgcolor='#FEF2F2', paper_bgcolor='#e9f5f5')
 st.plotly_chart(fig, use_container_width=False, sharing="streamlit", theme=None)
