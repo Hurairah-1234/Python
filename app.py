@@ -198,5 +198,5 @@ df3['platform'] = df1['platforms']
 fig = px.sunburst(data_frame=df3,path=[df3['Gender'], df3['age'],df3['country'],df3['ml_experience'],df3['salary'],df3['platform'],df3['first_platform']],values=df3['Gender_Count'],color_discrete_sequence=["deepskyblue", "mediumturquoise","aquamarine", "greenyellow","limegreen"],width=3000, height=1500,
                 title='<b>Summary')
 fig.update_layout( plot_bgcolor='#FEF2F2', paper_bgcolor='#e9f5f5')
-figure_or_data
+st.plotly_chart(fig, use_container_width=False, sharing="streamlit", theme=None, **kwargs)
 
