@@ -166,6 +166,10 @@ df1['Fav_media_sources'] = df[df.columns[284:296]].apply(
 # df1 into dataframe
 df1 = pd.DataFrame({"platforms":df1['Platform'],"first_platform":df1["First_Platform"],"research_include_ml":df1['Research_include_ML'],"programming_language":df1["Programming_language"],"ide":df1["IDE"],"hosted_notebooks":df1["Hosted_Notebooks"],"visualization_libraries":df1["Visualization_libraries"],"ml_framework_regular":df1["ML_framework_regular"],"ml_algo":df1["ML_algo"],"computer_vision_method":df1["Computer_Vision_method"],"nlp":df1["NLP"],"pre_trained_model":df1["Pre_Trained_Model"],"important_activities_at_work":df1["important_activities_at_work"],"cloud_computing_platform":df1["cloud_computing_platform"],'cloud_computing_products':df1['cloud_computing_products'],"data_storage_products":df1["data_storage_products"],"data_products":df1["data_products"],"business_intelligence_tools":df1["business_intelligence_tools"],"managed_ml-models":df1["Managed_ML-models"],"automated_ml_tools":df1["Automated_ML_tools"],"products_for_ml_model":df1["Products_for_ML_model"],"tools_to_monitor":df1["Tools_to_monitor"],"ethical_ai_products":df1["Ethical_AI_products"],"specialized_hardware":df1["Specialized_hardware"],"fav_media_soruces":df1["Fav_media_sources"]})
 
+df['For how many years have you used machine learning methods?'].fillna('I prefer not to answer',inplace=True)
+df['What is your current yearly compensation (approximate $USD)?'].fillna('I prefer not to answer',inplace=True)
+
+
 
 # Adding single columns as well
 df1['gender'] = df['What is your gender? - Selected Choice']
