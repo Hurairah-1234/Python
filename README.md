@@ -1,2 +1,2 @@
-# Hacker
-I am Ethical Hacker and I have 1 years experience in web penetration testing. I am recently learn AI and Machining Learning
+# Python Developer
+I am Python developer. I have one year experience in data science and machine learning algorithm
